@@ -26,10 +26,13 @@ describe('Park', function() {
   });
 
   it('should be able to add a dinosaur to its collection', function () {
-    park.addToDinosaurs
+    park.addToDinosaurs(new Dinosaur('Hateasaurus Rex', 'Enemies', 100))
+    const actual = park.dinosaurs;
+    assert.strictEqual(actual.length, 1);
   });
 
   it('should be able to remove a dinosaur from its collection');
+  
 
   it('should be able to find the dinosaur that attracts the most visitors');
 
